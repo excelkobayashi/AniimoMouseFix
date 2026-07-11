@@ -1,0 +1,17 @@
+/home/sage/Projects/AniimoMouseFix/bin/Debug/net10.0/AniimoMouseFix
+/home/sage/Projects/AniimoMouseFix/bin/Debug/net10.0/AniimoMouseFix.deps.json
+/home/sage/Projects/AniimoMouseFix/bin/Debug/net10.0/AniimoMouseFix.runtimeconfig.json
+/home/sage/Projects/AniimoMouseFix/bin/Debug/net10.0/AniimoMouseFix.dll
+/home/sage/Projects/AniimoMouseFix/bin/Debug/net10.0/AniimoMouseFix.pdb
+/home/sage/Projects/AniimoMouseFix/bin/Debug/net10.0/System.Windows.Forms.dll
+/home/sage/Projects/AniimoMouseFix/obj/Debug/net10.0/AniimoMouseFix.csproj.AssemblyReference.cache
+/home/sage/Projects/AniimoMouseFix/obj/Debug/net10.0/AniimoMouseFix.GeneratedMSBuildEditorConfig.editorconfig
+/home/sage/Projects/AniimoMouseFix/obj/Debug/net10.0/AniimoMouseFix.AssemblyInfoInputs.cache
+/home/sage/Projects/AniimoMouseFix/obj/Debug/net10.0/AniimoMouseFix.AssemblyInfo.cs
+/home/sage/Projects/AniimoMouseFix/obj/Debug/net10.0/AniimoMouseFix.csproj.CoreCompileInputs.cache
+/home/sage/Projects/AniimoMouseFix/obj/Debug/net10.0/AniimoMo.588B93AA.Up2Date
+/home/sage/Projects/AniimoMouseFix/obj/Debug/net10.0/AniimoMouseFix.dll
+/home/sage/Projects/AniimoMouseFix/obj/Debug/net10.0/refint/AniimoMouseFix.dll
+/home/sage/Projects/AniimoMouseFix/obj/Debug/net10.0/AniimoMouseFix.pdb
+/home/sage/Projects/AniimoMouseFix/obj/Debug/net10.0/AniimoMouseFix.genruntimeconfig.cache
+/home/sage/Projects/AniimoMouseFix/obj/Debug/net10.0/ref/AniimoMouseFix.dll
