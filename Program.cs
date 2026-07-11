@@ -7,41 +7,43 @@ internal class Program
 {
 	private const string WindowClass = "Qt5159QWindow";
 	private const string WindowTitle = "Aniimo";
+	private const int Attempts = 100;
+	private const int RepeatSecs = 10;
 
 	public static void Main(string[] args)
 	{
-		Console.WriteLine("Running fix every 30 seconds...");
-		while(true)
+		Console.WriteLine($"Attempting fix every {RepeatSecs} seconds...");
+		for(int attempt = 1; attempt <= RepeatSecs; attempt++)
 		{
-			Thread.Sleep(TimeSpan.FromSeconds(30));
-			SearchWindows(IntPtr.Zero);
+			Thread.Sleep(TimeSpan.FromSeconds(RepeatSecs));
+			Console.WriteLine($"Attempt {attempt} / {Attempts}");
+			bool found = SearchWindows();
+			if(found)
+			{
+				Console.WriteLine("Done");
+				return;
+			}
 		}
+
+		Console.WriteLine("Giving up");
 	}
 
-	private static void SearchWindows(IntPtr parent)
+	private static bool SearchWindows()
 	{
-		Console.WriteLine($"Searching for windows blocking mouse from {parent:X}");
+		Console.Write($"Searching for windows blocking mouse... ");
 
-		IntPtr handle = IntPtr.Zero;
-		bool found = false;
-
-		do
+		IntPtr handle = Win.FindWindowEx(IntPtr.Zero, IntPtr.Zero, WindowClass, WindowTitle);
+		if(handle == IntPtr.Zero)
 		{
-			handle = Win.FindWindowEx(parent, handle, WindowClass, WindowTitle);
-			if(handle == IntPtr.Zero)
-				break;
+			Console.WriteLine("not found");
+			return false;
+		}
 
-			HideWindow(handle);
-			SearchWindows(handle);
-
-			found = true;
-		} while(true);
-
-		if(!found)
-			Console.WriteLine("- no windows found");
+		Console.WriteLine("found");
+		return HideWindow(handle);
 	}
 
-	private static void HideWindow(IntPtr handle)
+	private static bool HideWindow(IntPtr handle)
 	{
 		Console.Write($"Hiding {handle:X}... ");
 		bool hid = Win.ShowWindow(handle, Win.SW_HIDE);
@@ -51,22 +53,25 @@ internal class Program
 		else
 			Console.WriteLine("already hidden");
 
-		CheckParent(handle);
+		bool hidParent = CheckParent(handle);
+		return hid || hidParent;
 	}
 
-	private static void CheckParent(IntPtr handle)
+	private static bool CheckParent(IntPtr handle)
 	{
 		IntPtr parent = Win.GetParent(handle);
 		if(parent == IntPtr.Zero)
-			return;
+			return false;
 
 		StringBuilder className = new(32);
 		int ret = Win.GetClassName(parent, className, className.Capacity);
 		if(ret == 0)
-			return;
+			return false;
 
-		if(className.ToString() == WindowClass)
-			HideWindow(parent);
+		if(className.ToString() != WindowClass)
+			return false;
+
+		return HideWindow(parent);
 	}
 
 	private static class Win

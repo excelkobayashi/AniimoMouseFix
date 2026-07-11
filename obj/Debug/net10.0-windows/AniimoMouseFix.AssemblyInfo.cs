@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AniimoMouseFix")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+571a32d3329203ca562c2fb6fdaf5bd06564995f")]
 [assembly: System.Reflection.AssemblyProductAttribute("AniimoMouseFix")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AniimoMouseFix")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
