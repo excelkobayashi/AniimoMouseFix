@@ -9,7 +9,7 @@ Note that it's possible that this could hide some important browser overlay used
 I believe the browser overlay is primarily used for logging in, so you should make sure have the game logging in and ready to play before running this.
 
 Note that this does NOT fix another unrelated issue where the launcher might not open.
-If you encounter that problem, then I recommend first downloading the game in a VM (try WinBoat), and then copying the files back over to Linux and then launching the main game EXE directly without using the launcher.
+If you encounter that problem, then I recommend first downloading the game in a VM (try WinBoat), and then copying the files back over to Linux and then running the main game (under `game/Aniimo.exe`) directly without using the launcher.
 
 # How To Use
 1. Make sure you have the game setup and ready to play, with your account already logged in
