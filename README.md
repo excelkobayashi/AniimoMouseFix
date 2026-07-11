@@ -15,9 +15,10 @@ If you encounter that problem, then I recommend first downloading the game in a 
 1. Make sure you have the game setup and ready to play, with your account already logged in
 2. Download the ZIP from the [Release Page](https://github.com/excelkobayashi/AniimoMouseFix/releases) and extract it somewhere
    - Note: this doesn't have to be within the game's Wine prefix
-3. Add an additional environment variable for launching the game (update the path):
+3. Add an additional environment variable for launching the game:
   - `PROTON_REMOTE_DEBUG_CMD=/path/to/AniimoMouseFix.exe`
-  - Obviously the path will need to be updated to wherever you extracted the ZIP, and you should avoid using any paths with spaces
+  - Obviously the path will need to be updated to wherever you extracted the ZIP
+  - Avoid using any paths with spaces, and use the full real Linux path (not the Windows path)
   - The method for setting this environment variable depends on how you're launching the game (Steam, Lutris, Heroic, Faugus, etc)
   - Some launchers support running "additional programs" with the game, so that could be an alternative this
 4. Launch the game and wait a few seconds on the login screen
