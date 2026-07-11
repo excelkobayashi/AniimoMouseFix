@@ -23,3 +23,5 @@ If you encounter that problem, then I recommend first downloading the game in a 
   - Some launchers support running "additional programs" with the game, so that could be an alternative this
 4. Launch the game and wait a few seconds on the login screen
 5. Eventually the mouse should start working and the fix will exit
+
+You can check the Lutris settings I'm using [here](./Documentation).
