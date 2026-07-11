@@ -9,7 +9,7 @@ Note that it's possible that this could hide some important browser overlay used
 I believe the browser overlay is primarily used for logging in, so you should make sure have the game logging in and ready to play before running this.
 
 Note that this does NOT fix another unrelated issue where the launcher might not open.
-If you encounter that problem, then I recommend first downloading the game in a VM (try WinBoat), and then copying the files back over to Linux and then running the main game (under `game/Aniimo.exe`) directly without using the launcher.
+If you encounter that problem, then I recommend first downloading the game in a VM (try WinBoat), and then copying the files back over to Linux and then running the main game (under `game/Aniimo.exe`) directly without using the game's built-in launcher.
 
 # How To Use
 1. Make sure you have the game setup and ready to play, with your account already logged in
@@ -19,7 +19,7 @@ If you encounter that problem, then I recommend first downloading the game in a 
   - `PROTON_REMOTE_DEBUG_CMD=/path/to/AniimoMouseFix.exe`
   - Obviously the path will need to be updated to wherever you extracted the ZIP
   - Avoid using any paths with spaces, and use the full real Linux path (not the Windows path)
-  - The method for setting this environment variable depends on how you're launching the game (Steam, Lutris, Heroic, Faugus, etc)
+  - The method for setting this environment variable depends on how you're running the game (Steam, Lutris, Heroic, Faugus, etc)
   - Some launchers support running "additional programs" with the game, so that could be an alternative this
 4. Launch the game and wait a few seconds on the login screen
 5. Eventually the mouse should start working and the fix will exit
