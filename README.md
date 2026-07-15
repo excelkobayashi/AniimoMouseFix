@@ -69,6 +69,7 @@ Note that we'll have to set up 2 different game entries because the launcher and
 5. Run `Aniimo (Launcher)` again
    - Install the game
    - After installation, close the launcher without clicking `Start`
+   - This launcher entry can be used again in the future if the game needs patching or repairing, but it shouldn't be used to run the actual game because we want a different Wine setup for that
 
 ### 3. Game
 1. In Lutris, click the + button in the top-left, and select `Add locally installed game`
